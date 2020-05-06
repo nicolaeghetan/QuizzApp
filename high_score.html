@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heigh Score</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="heigh_score">Heigh Score</h1>
+        </div>
+        <div class="items_list">
+            <div class="user_line">
+                <div id="user_name"></div>
+                <div id="score"></div>
+            </div>
+            <!-- <div class="user_line">
+                <div class="user_name">NG</div>
+                <div class="score">75</div>
+            </div> -->
+        </div>
+    </div>
+    <style>
+        .container {
+            width: 70%;
+            position: relative;
+            left: 15%;
+
+        }
+
+        .header {
+            width: 100%;
+            height: 150px;
+            background-color: antiquewhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            border: 3px;
+            border-bottom: blue dashed;
+            position: relative;
+
+        }
+
+        #heigh_score {
+            align-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            left: 40%;
+        }
+
+        .items_list {
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+
+        .user_line {
+            width: 80%;
+            align-content: center;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            position: relative;
+            left: 10%;
+            padding: 15px;
+            background-color: burlywood;
+            margin-bottom: 20px;
+
+        }
+
+        #user_name {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+    <script>
+        let data = JSON.parse(localStorage.getItem('dataSaved'))
+        console.log(name);
+        // for (var i = 0; i < data.length; i++) {
+        //     let user_line = $('<div class="user_line">')
+        //     let name = $('<div id="user_name">').attr(data.userIn)
+        //     let score = $('<div id="score">').attr(data.score)
+        // }
+
+    </script>
+</body>
+
+</html>
